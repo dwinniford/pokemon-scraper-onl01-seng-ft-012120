@@ -8,4 +8,6 @@ class Pokemon
     #@db = DB[:conn] 
   end 
   
+  def 
+  
 end
