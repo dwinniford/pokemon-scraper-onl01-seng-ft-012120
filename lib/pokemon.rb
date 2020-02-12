@@ -24,10 +24,10 @@ class Pokemon
       WHERE id = ?
     SQL
     row = db.execute(sql, id)
-    self.new_from_row(row)
+    self.new_from_row(row, db)
   end 
   
-  def self.new_from_row(row)
-    Pokemon.new(row[0], row[1], row[2])
+  def self.new_from_row(row, db)
+    Pokemon.new(row[0], row[1], row[2], db)
   end 
 end
