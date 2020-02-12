@@ -23,7 +23,7 @@ class Pokemon
       FROM pokemon
       WHERE id = ?
     SQL
-    row = db.execute(sql, id)
+    row = db.execute(sql, id)[0]
     self.new_from_row(row, db)
   end 
   
