@@ -8,6 +8,6 @@ class Pokemon
     @db = db 
   end 
   
-  def 
+  
   
 end
