@@ -28,5 +28,5 @@ class Pokemon
   end 
   
   def self.new_from_row
-  
+  end 
 end
