@@ -5,7 +5,7 @@ class Pokemon
     @id = id 
     @name = name 
     @type = type 
-    @db = DB[:conn] 
+    #@db = DB[:conn] 
   end 
   
 end
