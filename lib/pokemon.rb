@@ -10,11 +10,11 @@ class Pokemon
   
   def save
     sql = <<-SQL
-      INSERT INTO students (name, type)
+      INSERT INTO pokemon (name, type)
       VALUES (?, ?)
     SQL
     @db.execute(sql, self.name, self.type)
-    @id = @db.execute(SELECT insert_last_rowid() FROM pokemon)
+    @id = @db.execute("SELECT insert_last_rowid() FROM pokemon")[0][0]
   end 
   
 end
