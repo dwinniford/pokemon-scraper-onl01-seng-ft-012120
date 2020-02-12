@@ -28,5 +28,6 @@ class Pokemon
   end 
   
   def self.new_from_row(row)
+    Pokemon.new(row[0], row[1], row[2])
   end 
 end
